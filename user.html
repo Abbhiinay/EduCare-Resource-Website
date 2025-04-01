@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>    
+        <nav>
+            <div>
+            <h2>EduCare</h2>
+            <img src="burger-bar.png" width="40" id="menu">
+            <div class="nav">
+                <!-- <img id="logo" src="logo.jpg" width="50" > -->
+                <a href="index (2).html" target="_main">Home</a>
+                <a href="notes.html" target="_blank">Notes</a>
+                <a href="registration.html" target="_blank">Colleges</a>
+                <a href="contact.html" target="_main">Feedback</a>
+                <a href="About.html" target="_main">Contact</a>
+            </div>
+            </div>
+             <div class="flexEnd">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search Here" >
+                <!-- <img src="searchIcon.jpg" width="40" id="searchIcon"> -->
+           
+                <button value="Sign Up" id="signup"  onclick="window.open('signup.html', '_blank')">Sign Up</button>
+                <button value="Sign In" id="signin"  onclick="window.open('signin.html', '_blank')">Sign In</button>
+           
+                <button class="toggle">
+               <img src="light mode (1).png" width="30" class="day">
+               <img src="night mode.png" width="28" height="28" class="night">
+               </button>
+                <img src="user.png" width="40" id="user"  onclick="window.open('user.html', '_blank')">
+          
+            </div>
+        </nav>
+    </header><br>
+    <main>
+        
+    <div class="profile">
+        <h1>Application ID : <span style="font-weight: normal; font-size: 100%;">UXERFLOW-AD42001</span></h1><br><br>
+        <div class="innerprofile">
+       <div class="profileimg">
+        <img src="profile.png" width="120" ><br>
+        <h2 style="text-align: center;">John</h2>
+       </div>
+       <div class="profiledetails">
+        <label for="username" style="font-size: 130%;">Name</label><br>
+        <input type="text" id="username" name="username" placeholder="John"><br><br>
+        
+        <div class="depart">
+            <div>
+            <label for="department" style="font-size: 130%;">Department</label><br>
+        <input type="text" id="department" name="department" placeholder="CSE"></div>
+
+       <div> <label for="semester" style="font-size: 130%;">Semester</label><br>
+        <select id="semester" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6" selected>6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select></div>
+
+        <div><label for="subject" style="font-size: 130%;">Preferred Subject</label><br>
+        <select id="subject">
+            <option value="subject" selected>Subject</option>
+            <option value="Physics">Physics</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="MAthematics">Mathematics</option>
+        </select></div>
+        </div>
+       </div>
+       </div>
+    </div><br>
+
+    <div class="myWorks">
+        <h1>My Works</h1><br>
+        <div class="container4">
+        <div class="inner_container4">
+            <div class="kards" class="chemKard">
+               <div><img src="chemistry.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+               <div  style="font-size:large; margin-left:5px"> <b> ElectroChemistry</b></div><br>
+               <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+            </div>
+           
+            <div class="kards" class="MathKard">
+            <div><img src="maths.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+            <div  style="font-size:large; margin-left:5px"><b>Discrete Mathematics SEM 3</b></div><br>
+            <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+             </div>
+            
+             <div class="kards" class="PhyKard">
+             <div><img src="physics.jpg" width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+            <div style="font-size:large; margin-left:5px"><b>Quantum Mechanics</b></div><br>
+            <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+             </div>
+            
+             <div class="kards" class="BotKard">
+             <div><img src="botany.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+             <div  style="font-size:large; margin-left:5px"><b>BioChemistry</b></div><br>
+             <div class="seeNow" style="margin-left: 5px;"><h4>View</h4></div>
+            </div>
+            <div class="kards" class="chemKard">
+                <div><img src="chemistry.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+                <div  style="font-size:large; margin-left:5px"><b> Engineering Chemistry SEM 1</b></div><br>
+                <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+             </div>
+            
+             <div class="kards" class="MathKard">
+             <div><img src="maths.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+             <div  style="font-size:large; margin-left:5px"><b>Engineering Maths SEM 2</b></div><br>
+             <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+              </div>
+             
+              <div class="kards" class="PhyKard">
+              <div><img src="physics.jpg" width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+             <div style="font-size:large; margin-left:5px"><b>Physics SEM 2</b></div><br>
+             <div class="seeNow" style="margin-left: 5px;"><h3>View</h3></div>
+              </div>
+             
+              <div class="kards" class="BotKard">
+              <div><img src="botany.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+              <div  style="font-size:large; margin-left:5px"><b>Biology SEM 1</b></div><br>
+              <div class="seeNow" style="margin-left: 5px;"><h4>View</h4></div>
+             </div>
+        </div>
+        </div><br><br>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footCon1">
+                <h1>Quick Links</h1><br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footCon2">
+                <h1>Newsletter Subscription</h1>
+                <input type="email" placeholder="Enter Email">
+            </div>
+           <div class="footCon3">
+            <h1>We are Social</h1><br>
+            <div class="icons">
+                <img src="linkedin.jpg" width="30" height="30">
+                <img src="insta.jpg" width="30" height="30">
+                <img src="twitter.png" width="30" height="30">
+            </div>
+           </div>
+        </div><br>
+        <h3>Copyrights & Terms of uses</h3>
+    </footer>
+
+    </main>
+<script src="JS.js"></script>
+</body>
+</html>

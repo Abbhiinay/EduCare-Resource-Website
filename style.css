@@ -1,0 +1,623 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+#menu{
+  display: none;
+}
+nav div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+nav{
+    display: flex;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+    width:100%;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    gap:20px;
+    padding:5px;
+    border-bottom: 1px solid black;
+}
+.flexEnd{
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap:10px;
+  width:40%;
+}
+#user{
+  margin-left: 8%;
+}
+.darkMode nav, .darkMode nav a{
+  background-color: rgb(30, 30, 30); 
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  padding:5px;
+  justify-content: space-evenly;
+  font-size: 120%;
+  margin-left: 20px;
+  align-items: center;
+}
+.signins{
+  display: flex;
+  flex-direction:row;
+  gap:20px;
+  
+}
+body, .body{
+  background-color: white;
+  color: black;
+}
+.toggle{
+      background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s;
+}
+.day{
+  display: none;
+}
+.night{
+  display: inline;
+}
+.darkMode{
+  background-color: rgb(19, 19, 19);
+  color:white;
+}
+#user{
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.firstimage{
+    position: relative;
+    width:100%;
+}
+.txtimage1{
+    position: absolute;
+    top:20%;
+    left:16px;
+    color:white;
+    font-size: larger;  
+}
+.txtimage2{
+    position: absolute;
+    top:50%;
+    left:10px;
+    color:rgb(0, 0, 0);
+    width:30%;
+}
+.UandD div{
+  display: flex;
+  flex-direction: row;
+}
+.dnldnote{
+    padding:10px;
+    background-color: rgb(7, 82, 245);
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    text-decoration: none;
+    top: 70%;
+    left:70%;
+}
+.upldnote{
+    padding:10px;
+    background-color: rgb(7, 82, 245);
+    color:white;
+    border-radius: 5px;
+    position: absolute;
+    text-decoration: none;
+    top: 70%;
+    left:82%;
+
+}
+.dnldnote:hover, .upldnote:hover , .folBtn:hover{
+    text-decoration: underline;
+    box-shadow: 0 0 8px 1px rgb(143, 143, 143);
+    cursor: pointer;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#collegeDrop,#subjectDrop, #semesterDrop, #resourceDrop{
+    width:130%;
+    font-size: medium;
+    padding:15px;
+    border-radius: 10px;
+}
+#collegeDrop:hover,#subjectDrop:hover, #semesterDrop:hover, #resourceDrop:hover, #button3:hover , .seeNow:hover{
+    box-shadow: 0 0 4px 4px rgb(194, 194, 194);
+    cursor: pointer;
+}
+#button3{
+    padding:10px;
+    background-color: rgb(3, 80, 13);
+    color:white;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.inner_container2{
+    display: flex;
+    transition: transform 0.5s;
+    gap:20px;
+}
+.Cards{
+   border-radius: 10px;
+   padding: 0 0 5px 0;
+}
+#chemCard{
+    background-color: rgb(248, 57, 159);
+}
+#MathCard{
+    background-color:greenyellow;
+}
+#PhyCard{
+    background-color:mediumpurple;
+}
+#BotCard{
+    background-color:coral;
+}
+.Cards:hover{
+    box-shadow: 0 0  10px 5px rgb(143, 143, 143);
+}
+.seeNow{
+    background-color: black;
+    color:white;
+    border-radius: 5px;
+    width:25%;
+    padding:3px;
+}
+.prvBtn, .nxtBtn{
+    position: relative;
+    background: orange;
+    margin-top:80px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prvBtn{ left: 0; }
+  .nxtBtn {right: 0; }
+  
+  .contributorCard{
+    display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap:10px;
+ 
+  justify-content: center;
+   align-items: center;
+ }
+
+  .contributorCard > div{
+    max-height: 100vh;
+  }
+  #student1 , #student2, #student3, #student4{
+    position: relative;
+    border-radius: 20px;
+  }
+  #student1:hover, #student2:hover, #student3:hover, #student4:hover{
+    box-shadow: 0 0  10px 5px rgb(143, 143, 143);
+  }
+  #student1Name, #student2Name, #student3Name, #student4Name{ position: absolute; top:6%;}
+  #student1star, #student2star, #student3star, #student4star{position: absolute; top:10%}
+  #student1img, #student2img, #student3img, #student4img{border-radius: 20px;}
+  .folBtn{
+    color: white;
+    background-color: rgb(5, 46, 192);
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 20px;
+  }
+  #fol1, #fol2, #fol3, #fol4{
+    position: absolute;
+    top:90%;
+    left: 70%;
+  }
+  .reviews{
+    text-align: center;
+    padding:40px;
+  }
+  .review1{
+    width:80%;
+    margin: 0px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(199, 145, 250);
+  }
+  .review1text{
+    border-radius: 10px 0 0px 10px;
+    padding:50px;
+    text-align: center;
+  }
+ 
+  footer{
+    background-color: rgb(17, 108, 198);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+  }
+  .footer{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px 20px 50px 20px;
+  }
+  .footCon1 ul{
+    list-style-type:none;
+    line-height: 30px;
+  }
+  .footCon1 a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+  }
+  .footCon1 a:hover{
+    text-decoration: underline;
+  }
+  .footCon1 a:active{
+    color: purple;
+  }
+
+  .footCon2{
+    line-height: 40px;
+  }
+  input[type="email"]{
+      width:80%;
+      padding:8px;
+      border-radius: 10px;
+      border: none;
+  }
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .icons img{
+    border-radius: 2px;
+  }
+ .LandR{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+ }
+  .left{
+    background-color: rgb(87, 191, 248);
+    width:50%;
+    height: 100vh;
+    color:white;
+    line-height: 80px;
+    text-align:center;
+    align-items: flex-start;
+  }
+  .listLeft{
+    line-height: 35px;
+  }
+  .right{
+     left:50%;
+     width:50%;
+  }
+  .right > div{
+     padding: 15px;
+  }
+  .right input{
+    padding: 10px;
+    width: 70%;
+    border-radius: 10px;
+    border:1px solid black;
+    align-items: center;
+    justify-content: center;
+  }
+  .headings{
+    text-align: center;
+  }
+  .inputs{
+    text-align: left;
+    margin-left: 25%;
+  }
+  .fa:hover{
+    cursor: pointer;
+  }
+  #password{
+    position: relative;
+  }
+  .fa{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 3px;
+  }
+  .fgtPwd{
+    margin-left: 60%;
+  }
+  .fgtPwd:hover{
+    text-decoration: underline;
+    color: gray;
+  }
+  .Asign{
+    line-height: 30px;
+    text-align: center;
+  }
+  #signin, #signup{
+    background-color: rgb(34, 77, 235);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  #signup:hover , #signin:hover{
+    box-shadow: 0 0  6px 3px rgb(143, 143, 143);
+  }
+
+
+  @media(max-width:1112px){
+    *{
+      max-width: 100%;
+    }
+  
+    .container1{
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-evenly;
+  }
+  #collegeDrop,#subjectDrop, #semesterDrop, #resourceDrop{
+      width:100%;
+      font-size: medium;
+      padding:10px;
+      border-radius: 10px;
+  }
+  .inner_container2, .contributorCard{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #manish{
+    max-width: 200px;
+  }
+  .review1{
+    max-width: 90%;
+  }
+  .dnldnote{
+    left:60%;
+  }
+  .upldnote{
+    left:77%;
+  }
+  nav a{
+    font-size: medium;
+
+  }
+  .flexEnd{
+    margin-left: 7%;
+    width: auto;
+  }
+  #searchBar{
+    display: none;
+  }
+  }
+  
+  @media(max-width:835px){
+    .flexEnd{
+      margin-left: 0%;
+      width: auto;
+    }
+    #searchBar{
+      display: none;
+    }
+  }
+
+@media(max-width:768px){
+  *{
+    max-width: 100%;
+  }
+
+  .container1{
+    display: grid;
+ grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+#collegeDrop,#subjectDrop, #semesterDrop, #resourceDrop{
+    width:100%;
+    font-size: medium;
+    padding:10px;
+    border-radius: 10px;
+}
+.inner_container2, .contributorCard{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#manish{
+  max-width: 200px;
+}
+.review1{
+  max-width: 90%;
+}
+.txtimage2{
+  font-size: 90%;
+  max-width: 30%;
+}
+.dnldnote{
+  left:60%;
+}
+.upldnote{
+  left:80%;
+}
+nav a{
+  font-size: medium;
+
+}
+
+.flexEnd{
+  margin-left: 10%;
+  width: auto;
+}
+#searchBar{
+  display: none;
+}
+#signup, #signin{
+  display: none;
+}
+}
+
+@media(max-width:646px) {
+  *{
+    max-width: 100%;
+  }
+
+  .container1{
+    display: grid;
+ grid-template-columns: auto ;
+    justify-content: space-evenly;
+}
+#collegeDrop,#subjectDrop, #semesterDrop, #resourceDrop{
+    width:100%;
+    font-size: small;
+    padding:10px;
+    border-radius: 10px;
+}
+.inner_container2, .contributorCard{
+  display: grid;
+  grid-template-columns: auto ;
+}
+#manish{
+display: none;
+}
+.review1{
+  max-width: 90%;
+}
+.txtimage2{
+  font-size: 60%;
+  max-width: 40%;
+}
+.dnldnote{
+  left:50%;
+  padding:7px;
+  font-size: 70%;
+}
+.upldnote{
+  left:75%;
+  padding:7px;
+  font-size: 70%;
+}
+#menu{
+  display: block; /* Show the menu icon */
+}
+
+.nav{
+  display: none; /* Hide links by default */
+  background-color: #444;
+  position: absolute;
+  top: 60px; /* Below the header */
+  left: 0;
+  width: 100%;
+  flex-direction: column; /* Vertical layout */
+  z-index: 10;
+}
+
+.nav.active {
+  display: flex; /* Show links when menu is toggled */
+}
+.footer{
+  width:90%;
+}
+}
+
+@media(max-width:480px){
+  *{
+    max-width: 100%;
+  }
+  .container1{
+    display: grid;
+ grid-template-columns: auto ;
+    justify-content: space-evenly;
+}
+#collegeDrop,#subjectDrop, #semesterDrop, #resourceDrop{
+    width:100%;
+    font-size: small;
+    padding:10px;
+    border-radius: 10px;
+}
+.inner_container2, .contributorCard{
+  display: grid;
+  grid-template-columns: auto ;
+}
+#manish{
+ display: none;
+}
+.review1{
+  max-width: 90%;
+}
+.txtimage2{
+  font-size: 60%;
+  max-width: 40%;
+}
+.dnldnote{
+  left:50%;
+  padding:7px;
+  font-size: 70%;
+}
+.upldnote{
+  left:75%;
+  padding:7px;
+  font-size: 70%;
+}
+#menu{
+  display: block;
+}
+
+.nav{
+  display: none; 
+  background-color: #444;
+  position: absolute;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.nav.active {
+  display: flex; 
+}
+.footer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap:10px;
+}
+.footCon3{
+grid-column: 1 / span 2;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+}

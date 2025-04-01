@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCare HomePage</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>    
+        <nav>
+            <div>
+            <h2>EduCare</h2>
+            <img src="burger-bar.png" width="30" id="menu">
+            <div class="nav" id="navMenu">
+                <!-- <img id="logo" src="logo.jpg" width="50" > -->
+                <a href="index (2).html" target="_main">Home</a>
+                <a href="notes.html" target="_blank">Notes</a>
+                <a href="registration.html" target="_blank">Colleges</a>
+                <a href="contact.html" target="_main">Feedback</a>
+                <a href="About.html" target="_main">Contact</a>
+            </div>
+            </div>
+             <div class="flexEnd">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search Here" >
+                <!-- <img src="searchIcon.jpg" width="40" id="searchIcon"> -->
+           
+                <button value="Sign Up" id="signup"  onclick="window.open('signup.html', '_blank')">Sign Up</button>
+                <button value="Sign In" id="signin"  onclick="window.open('signin.html', '_blank')">Sign In</button>
+           
+                <button class="toggle">
+               <img src="light mode (1).png" width="30" class="day">
+               <img src="night mode.png" width="28" height="28" class="night">
+               </button>
+                <img src="user.png" width="40" id="user"  onclick="window.open('user.html', '_blank')">
+          
+            </div>
+        </nav>
+    </header><br>
+<main>
+    <div>
+        <div class="firstimage">
+            <img src="imagehome.jpg" width="100%" height="450">
+            <div class="txtimage1"><h1 >Your Best Destination for Study Materials!</h1></div>
+            <div class="txtimage2"><h2>Access wide range of notes and materials from various institutions. Share, collaborate and stay ahead in your academics</h2></div>
+            <div class="UandD"><div class="dnldnote"><h3>Download Notes</h3></div>
+            <div class="upldnote"><h3>Upload Notes</h3></div></div>
+        </div><br>
+         
+        <div class="container1">
+            <div><label for="collegeDrop" style="font-size:larger; font-weight:bold;">College</label><br>
+                <select id="collegeDrop">
+                <option value="Colleges">Colleges</option>
+                <option value="IIT Madras">IIT Madras</option>
+                <option value="IIT Bombay">IIT Bombay</option>
+                <option value="IIT Delhi">IIT Delhi</option>
+             </select>
+             </div>
+
+             <div><label for="semesterDrop" style="font-size:larger; font-weight:bold">Semester</label><br>
+                <select id="semesterDrop">
+                <option value="semesters">semesters</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                 </select>
+            </div>
+
+            <div><label for="subjectDrop" style="font-size:larger; font-weight:bold">Subject</label><br>
+            <select id="subjectDrop" >
+            <option value="subjects">subjects</option>
+            <option value="Engineering Physics">Engineering Physics</option>
+            <option value="Engineering Mathematics">Engineering Mathematics</option>
+            <option value="Engineering Chemistry">Engineering chemistry</option>
+             </select>
+            </div>
+
+            <div><label for="resourceDrop" style="font-size:larger; font-weight:bold">Type of Resources</label><br>
+                <select id="resourceDrop" >
+                <option value="subjects">Notes, Question Papers, Study Materials</option>
+                <option value="Engineering Physics">Notes</option>
+                <option value="Engineering Mathematics">Question Papers</option>
+                <option value="Engineering Chemistry">Study Materials</option>
+                </select>
+            </div>
+        </div><br><br>
+
+        <div class="container2">
+            <button class="prvBtn">&#10094;</button>
+        <div class="inner_container2">
+            <div class="Cards" id="chemCard">
+               <div><img src="chemistry.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+               <div  style="font-size:large; margin-left:5px">Check <b>Chemistry</b> content</div><br>
+               <div class="seeNow" style="margin-left: 5px;"><h3>See Now</h3></div>
+            </div>
+           
+            <div class="Cards" id="MathCard">
+            <div><img src="maths.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+            <div  style="font-size:large; margin-left:5px">Check <b>Maths</b> content</div><br>
+            <div class="seeNow" style="margin-left: 5px;"><h3>See Now</h3></div>
+             </div>
+            
+             <div class="Cards" id="PhyCard">
+             <div><img src="physics.jpg" width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+            <div style="font-size:large; margin-left:5px">Check <b>Physics</b> content</div><br>
+            <div class="seeNow" style="margin-left: 5px;"><h3>See Now</h3></div>
+             </div>
+            
+             <div class="Cards" id="BotCard">
+             <div><img src="botany.jpg"  width="300" height="170" style=" border-radius: 10px 10px 0 0;"></div>
+             <div  style="font-size:large; margin-left:5px">Check <b>Botany</b> content</div><br>
+             <div class="seeNow" style="margin-left: 5px;"><h4>See Now</h4></div>
+            </div>
+        </div>
+            <button class="nxtBtn">&#10095;</button>
+        </div><br><br>
+
+       
+        <div class="contributors">
+            <h1 style="margin-left:15%">Meet our Top Contributors</h1><br>
+            <div class="contributorCard">
+              <div id="student1">
+                <h2 id="student1Name">Abhay Kumar (NIT WGL)</h2>
+                <h3 id="student1star"> &#9733;  &#9733;  &#9733;  &#9733;</h3>
+                <img src="student1.jpg" width="300" height="450" id="student1img" >
+                <button class="folBtn" id="fol1" onclick="follow()">Follow</button>
+               </div>
+              <div id="student2">
+                <h2 id="student2Name">Catherine (IIT Bombay)</h2>
+                <h3 id="student2star"> &#9733;  &#9733;  &#9733;  &#9733;</h3>
+                <img src="student2.jpg" width="300" height="450" id="student2img" >
+                <button class="folBtn" id="fol2" onclick="follow()">Follow</button>
+              </div>
+              <div id="student3">
+                <h2 id="student3Name">Richard (IIIT Bhopal)</h2>
+                <h3 id="student3star"> &#9733;  &#9733;  &#9733;  &#9733;</h3>
+                <img src="student3.jpg" width="300" height="450" id="student3img">
+                <button class="folBtn" id="fol3" onclick="follow()">Follow</button>
+              </div>
+              <div id="student4">
+                <h2 id="student4Name">Tejaswini (NIT Surathkal)</h2>
+                <h3 id="student4star"> &#9733;  &#9733;  &#9733;  &#9733;</h3>
+                <img src="student4.jpg" width="300" height="450" id="student4img" >
+                <button class="folBtn" id="fol4" onclick="follow()">Follow</button>
+              </div>
+            </div>
+        </div><br><br>
+
+        <div class="reviews">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">TESTIMONIALS</h1>
+            <pre style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: larger; color: rgb(85, 85, 85);">These are Reviews of viewers</pre><br><br>
+        
+            <div class="review1">
+                <div class="review1text" ><p style="font-size: 150%; margin-top: 10%;" ><q>The platform is great, but a live Q/A would be beneficial for solving doubts and discussion of topics.</q></p><br>
+                <h2>Manish, IIT Indore</h2></div>
+                <div> <img src="groupstudy.jpg" height="405" width="500" id = "manish" style="border-radius: 20px; border:none ;"></div>
+            </div>
+           
+        </div><br><br>
+    </main>
+        <footer>
+        <div class="footer">
+            <div class="footCon1">
+                <h1>Quick Links</h1><br>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footCon2">
+                <h1>Newsletter Subscription</h1>
+                <input type="email" placeholder="Enter Email">
+            </div>
+           <div class="footCon3">
+            <h1>We are Social</h1><br>
+            <div class="icons">
+                <img src="linkedin.jpg" width="30" height="30">
+                <img src="insta.jpg" width="30" height="30">
+                <img src="twitter.png" width="30" height="30">
+            </div>
+           </div>
+        </div><br>
+        <h3>Copyrights & Terms of uses</h3>
+    </footer>
+
+       
+    </div>
+  <script src="JS.js"></script>
+</body>
+</html>

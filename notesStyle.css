@@ -1,0 +1,115 @@
+.house{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+.room{
+  display: flex;
+}
+main{
+  margin-top:10%;
+}
+.container5{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#collegeDrop, #semesterDrop, #subjectDrop, #resourceDrop{
+  width:120%;
+  padding:10px;
+  border-radius: 5px;
+}
+.contributorCard{
+  display: grid;
+grid-template-columns: auto auto auto auto;
+gap:10px;
+
+justify-content: space-evenly;
+ align-items: center;
+}
+
+.contributorCard > div{
+  max-height: 100vh;
+}
+.studentNo{
+  position: relative;
+  border-radius: 20px;
+}
+
+.studentName{ position: absolute; top:8%; color:rgb(0, 0, 0)}
+.studentstar{position: absolute; top:17%;  color:rgb(0, 0, 0)}
+.studentimg{border-radius: 20px;}
+.folBtn{
+  color: white;
+  background-color: rgb(5, 46, 192);
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  top:90%;
+  left: 60%;
+}
+
+.folBtn:hover{
+  box-shadow: 0 0 5px 5px rgba(48, 47, 47, 1);
+}
+.clg{
+  position:absolute;
+  top:23%;
+
+}
+@media(max-width:1221px){
+  .contributorCard{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:10px;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+}
+@media(max-width:932px){
+  .contributorCard{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap:10px;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+  .container5{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+  @media(max-width:648px){
+    .contributorCard{
+    display: grid;
+    grid-template-columns: auto;
+    gap:10px;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+    .container5{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap:10px;
+  }
+  .footCon3{
+    grid-column: 1 / span 2;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+

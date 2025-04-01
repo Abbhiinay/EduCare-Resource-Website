@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="StyleSheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h2>EduCare</h2>
+            <img src="burger-bar.png" width="30" id="menu">
+            <div class="nav" id="navMenu">
+                <!-- <img id="logo" src="logo.jpg" width="50" > -->
+                <a href="index (2).html" target="_main">Home</a>
+                <a href="notes.html" target="_blank">Notes</a>
+                <a href="registration.html" target="_blank">Colleges</a>
+                <a href="contact.html" target="_main">Feedback</a>
+                <a href="About.html" target="_main">Contact</a>
+            </div>
+            </div>
+             <div class="flexEnd">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Search Here" >
+                <!-- <img src="searchIcon.jpg" width="40" id="searchIcon"> -->
+           
+                <button value="Sign Up" id="signup"  onclick="window.open('signup.html', '_blank')">Sign Up</button>
+                <button value="Sign In" id="signin"  onclick="window.open('signin.html', '_blank')">Sign In</button>
+           
+                <button class="toggle">
+               <img src="light mode (1).png" width="30" class="day">
+               <img src="night mode.png" width="28" height="28" class="night">
+               </button>
+                <img src="user.png" width="40" id="user"  onclick="window.open('user.html', '_blank')">
+          
+            </div>
+    </nav><br><br>
+<div class="LandR">
+    <div class="left">
+        <div >
+        <h1 class="leftContent"> Welcome to EDUCARE</h1>
+       <img src="logo.jpg" width="200" style="border-radius: 10px;" class="leftContent">
+       
+      <p class="leftContent" style="font-size: 170%; font-family: 'Times New Roman', Times, serif;"> You are at the best place for</p>
+      <div class="listLeft">
+      <h2>Study Materials</h2>
+       <h2>Notes</h2>
+       <h2>Question Papers</h2>
+       <h2>Textbooks</h2>
+    </div>
+       </div>
+    </div>
+    <div class="right">
+        <div class="headings">
+        <h1>Signup</h1><br>
+        <p style="font-size: larger; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Please fill details to Signup </p><br>
+        </div >
+        <div class="inputs">
+        <label for="Username" >Username*</label><br>
+        <input type="text" name="Username" id="Username" placeholder="Username"><br>
+        </div>
+        <div class="inputs">
+        <label for="Email" class="inpHead">Email*</label><br>
+        <input type="text" name="Email" id="Email" placeholder="Email"><br>
+        </div>
+        <div class="inputs">
+        <label for="Password" class="inpHead" >Password*</label><br>
+        <input type="password" name="Password" id="Password" placeholder="Password">
+        <i style="font-size:24px" class="fa" onclick="Password()">&#xf06e;</i>
+        </div>
+        <div class="Asign">
+        <p>Already a member?</p>
+        <button value="Sign In" id="signin"  onclick="window.open('signin.html', '_blank')">Sign In</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="footCon1">
+            <h1>Quick Links</h1><br>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="footCon2">
+            <h1>Newsletter Subscription</h1>
+            <input type="email" placeholder="Enter Email">
+        </div>
+       <div class="footCon3">
+        <h1>We are Social</h1><br>
+        <div class="icons">
+            <img src="linkedin.jpg" width="30" height="30">
+            <img src="insta.jpg" width="30" height="30">
+            <img src="twitter.png" width="30" height="30">
+        </div>
+       </div>
+    </div><br>
+    <h3>Copyrights & Terms of uses</h3>
+</footer>
+<script src="JS.js" ></script>
+</body>
+</html>

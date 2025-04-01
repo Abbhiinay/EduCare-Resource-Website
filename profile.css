@@ -1,0 +1,128 @@
+main{
+    margin-top:5%;
+}
+
+#user{
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.profile{
+  border: 1px solid gray;
+  width:80%;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  padding:20px;
+  border-radius: 20px;
+}
+.profiledetails{
+  flex:1;
+}
+.profileimg{
+  justify-content: left;
+  align-items: start;
+}
+.innerprofile{
+  display: flex;
+  flex-direction: row;
+  gap:80px;
+
+}
+#username{
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(88, 88, 88);
+}
+.depart{
+  display: flex;
+  flex-direction: row;
+  gap:10%;
+}
+#department, #semester, #subject{
+  width:120%;
+  padding:10px;
+  border-radius: 10px;
+  border: 1px solid rgb(88, 88, 88);
+}
+.myWorks{
+  text-align: center;
+}
+.inner_container4{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.5s;
+  gap:20px;
+}
+.kards{
+ border-radius: 10px;
+ padding: 0 0 5px 0;
+ background-color: rgb(152, 151, 151);
+}
+.kards:hover{
+  box-shadow: 0 0  10px 5px rgb(143, 143, 143);
+}
+.seeNow{
+  background-color: black;
+  color:white;
+  border-radius: 5px;
+  width:25%;
+  padding:3px;
+}
+
+@media(max-width:955px){
+  .inner_container4{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+    gap:20px;
+  }
+}
+@media(max-width:648px){
+  .inner_container4{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+    gap:20px;
+  }
+  .depart{
+    display: grid;
+  grid-template-columns: auto auto;
+    gap:10%;
+  }
+}
+@media(max-width:448px){
+  .inner_container4{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+    gap:20px;
+  }
+  .depart{
+    display: grid;
+  grid-template-columns: auto;
+    gap:10%;
+  }
+  .profile{
+    border: 1px solid gray;
+    width:90%;
+    height:80vh;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding:20px;
+    border-radius: 20px;
+  }
+}

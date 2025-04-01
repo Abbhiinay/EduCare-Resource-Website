@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notesStyle.css" >
+</head>
+<body>
+    <nav>  
+      <div>
+        <h2>EduCare</h2>
+        <img src="burger-bar.png" width="30" id="menu">
+        <div class="nav" id="navMenu">
+            <!-- <img id="logo" src="logo.jpg" width="50" > -->
+            <a href="index (2).html" target="_main">Home</a>
+            <a href="notes.html" target="_blank">Notes</a>
+            <a href="registration.html" target="_blank">Colleges</a>
+            <a href="contact.html" target="_main">Feedback</a>
+            <a href="About.html" target="_main">Contact</a>
+        </div>
+        </div>
+         <div class="flexEnd">
+            <input type="text" name="searchBar" id="searchBar" placeholder="Search Here" >
+            <!-- <img src="searchIcon.jpg" width="40" id="searchIcon"> -->
+       
+            <button value="Sign Up" id="signup"  onclick="window.open('signup.html', '_blank')">Sign Up</button>
+            <button value="Sign In" id="signin"  onclick="window.open('signin.html', '_blank')">Sign In</button>
+       
+            <button class="toggle">
+           <img src="light mode (1).png" width="30" class="day">
+           <img src="night mode.png" width="28" height="28" class="night">
+           </button>
+            <img src="user.png" width="40" id="user"  onclick="window.open('user.html', '_blank')">
+      
+        </div>
+    </nav><hr>
+    <main>
+    <div class="container5">
+        <div><label for="collegeDrop" style="font-size:larger; font-weight:bold;">College</label><br>
+            <select id="collegeDrop">
+            <option value="Colleges">Colleges</option>
+            <option value="IIT Madras">IIT Madras</option>
+            <option value="IIT Bombay">IIT Bombay</option>
+            <option value="IIT Delhi">IIT Delhi</option>
+         </select>
+         </div>
+
+         <div><label for="semesterDrop" style="font-size:larger; font-weight:bold">Semester</label><br>
+            <select id="semesterDrop">
+            <option value="semesters">semesters</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+             </select>
+        </div>
+
+        <div><label for="subjectDrop" style="font-size:larger; font-weight:bold">Subject</label><br>
+        <select id="subjectDrop" >
+        <option value="subjects">subjects</option>
+        <option value="Engineering Physics">Engineering Physics</option>
+        <option value="Engineering Mathematics">Engineering Mathematics</option>
+        <option value="Engineering Chemistry">Engineering chemistry</option>
+         </select>
+        </div>
+
+        <div><label for="resourceDrop" style="font-size:larger; font-weight:bold">Type of Resources</label><br>
+            <select id="resourceDrop" >
+            <option value="subjects">Notes, Question Papers, Study Materials</option>
+            <option value="notes">Notes</option>
+            <option value="Question Papers">Question Papers</option>
+            <option value="Study Materials">Study Materials</option>
+            </select>
+        </div>    
+
+    </div><br><br>
+    
+    <div class="contributors">
+        <h1 style="margin-left:8%">Notes From Various Institutions</h1><br>
+        <div class="contributorCard">
+          <div id="student1" class="studentNo">
+            <h2 class="studentName">Engineering Mathematics</h2><br>
+            <h2 id="clg1" class="clg">NIT TRICHY</h2>
+            <h3 class="studentstar"> SEM 1</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn" onclick="follow()">Download</button>
+           </div>
+          <div id="student2" class="studentNo">
+            <h2 class="studentName">Engineering Mathematics</h2><br>
+            <h2 id="clg2" class="clg">NIT TRICHY</h2>
+            <h3 class="studentstar">SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn" onclick="follow()">Download</button>
+          </div>
+          <div id="student3" class="studentNo">
+            <h2 class="studentName">Web Technology</h2>
+            <h2 id="clg3" class="clg">NIT PATNA</h2>
+            <h3 class="studentstar"> SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg">
+            <button class="folBtn" onclick="follow()">Download</button>
+          </div>
+          <div id="student4" class="studentNo">
+            <h2 class="studentName">Computer Organisation</h2>
+            <h2 class="clg" id="clg4">NIT PATNA</h2>
+            <h3 class="studentstar"> SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn" onclick="follow()">Download</button>
+          </div>
+          <div id="student5" class="studentNo">
+            <h2 class="studentName">Engineering Mathematics</h2><br>
+            <h2 class="clg" id="clg5">NIT TRICHY</h2>
+            <h3 class="studentstar"> SEM 1</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn"  onclick="follow()">Download</button>
+           </div>
+          <div id="student6" class="studentNo">
+            <h2 class="studentName">Engineering Mathematics</h2><br>
+            <h2 class="clg" id="clg6">NIT TRICHY</h2>
+            <h3 class="studentstar">SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn" onclick="follow()">Download</button>
+          </div>
+          <div id="student7" class="studentNo">
+            <h2 class="studentName">Web Technology</h2>
+            <h2 class="clg" id="clg7">NIT PATNA</h2>
+            <h3 class="studentstar"> SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg">
+            <button class="folBtn" onclick="follow()">Download</button>
+          </div>
+          <div id="student8" class="studentNo">
+            <h2 class="studentName">Computer Organisation</h2>
+            <h2  class="clg" id="clg8">NIT PATNA</h2>
+            <h3 class="studentstar"> SEM 2</h3>
+            <img src="pen.jpg" width="300" height="400" class="studentimg" >
+            <button class="folBtn"  onclick="follow()">Download</button>
+          </div>
+        </div>
+    </div><br><br>
+    <footer>
+      <div class="footer">
+          <div class="footCon1">
+              <h1>Quick Links</h1><br>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="index.html">Contact</a></li>
+                  <li><a href="index.html">Gallery</a></li>
+              </ul>
+          </div>
+          <div class="footCon2">
+              <h1>Newsletter Subscription</h1>
+              <input type="email" placeholder="Enter Email">
+          </div>
+         <div class="footCon3">
+          <h1>We are Social</h1><br>
+          <div class="icons">
+              <img src="linkedin.jpg" width="30" height="30">
+              <img src="insta.jpg" width="30" height="30">
+              <img src="twitter.png" width="30" height="30">
+          </div>
+         </div>
+      </div><br>
+      <h3>Copyrights & Terms of uses</h3>
+  </footer>
+
+</main>
+</body>
+</html>
