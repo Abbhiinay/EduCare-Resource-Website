@@ -340,12 +340,13 @@ body, .body{
     text-align:center;
     align-items: flex-start;
   }
-  .listLeft{
-    line-height: 35px;
-  }
+
   .right{
-     left:50%;
-     width:50%;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    left:50%;
+    width:50%;
   }
   .right > div{
      padding: 15px;
@@ -639,5 +640,15 @@ grid-column: 1 / span 2;
 text-align: center;
 justify-content: center;
 align-items: center;
+}
+.left{
+  width:100%;
+}
+.right{
+  width:100%;
+}
+.LandR{
+  display: flex;
+  flex-direction: column;
 }
 }
