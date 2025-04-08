@@ -25,6 +25,7 @@ let toggle = document.querySelector(".toggle");
 let day = document.querySelector(".day");
 let night = document.querySelector(".night");
 let nav = document.querySelector(".nav");
+const cards = document.querySelectorAll(".cards");
 
 
 toggle.addEventListener("click", () =>{
@@ -54,5 +55,38 @@ const menuIcon = document.querySelector('#menu');
                 navMenu.classList.remove('active');
             });
         });
+
+
+const carousel = document.querySelector('.inner_container2');
+const kards = document.querySelectorAll('.Cards');
+const prevBtn = document.querySelector('.prvBtn');
+const nextBtn = document.querySelector('.nxtBtn');
+
+const cardWidth = kards[0].offsetWidth + 20; 
+const cardsPerView = 4;
+let currentIndex =0;
+const maxIndex= kards.length - cardsPerView;
+
+function updateCarousel(){
+  carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+  prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = currentIndex >= maxIndex;
+}
+nextBtn.addEventListener('click', () => {
+  if (currentIndex < maxIndex) {
+      currentIndex++;
+      updateCarousel();
+  }
+});
+
+prevBtn.addEventListener('click', () => {
+  if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+  }
+});
+
+updateCarousel();
 
 
